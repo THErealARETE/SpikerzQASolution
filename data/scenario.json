@@ -1,0 +1,215 @@
+{
+  "_comment": "Deterministic mock scenario written in MONITORING DAYS, not dates. Day 1 is the real date the first health check ran; Day N is that date + N-1. Nothing is generated ahead of time: each day's state is only produced when that day's check actually runs. Every failure class the tool must detect appears at least once. 'operator_actions' are scripted mock-operator responses logged on the day of detection; their effect appears in later days' events.",
+  "default_token_ttl_days": {
+    "facebook": 60,
+    "instagram": 60,
+    "linkedin": 60,
+    "tiktok": 365,
+    "x": 180
+  },
+  "baseline": {
+    "LI-002": {
+      "token_expires_in_days": 9
+    },
+    "IG-002": {
+      "setup_complete": false
+    }
+  },
+  "events": [
+    {
+      "day": 1,
+      "account_id": "XX-002",
+      "transient_failures": 2,
+      "transient_error": "HTTP 429 Too Many Requests",
+      "_why": "X API rate limit shared with XX-003; retry with backoff succeeds"
+    },
+    {
+      "day": 2,
+      "account_id": "TT-003",
+      "set": {
+        "connection_status": "expired",
+        "error": "access_token_invalid: The access token is invalid or not found in the request."
+      },
+      "_why": "Refresh token invalidated after the owner changed password"
+    },
+    {
+      "day": 2,
+      "account_id": "IG-003",
+      "remove_permissions": [
+        "instagram_business_manage_comments"
+      ],
+      "_why": "Owner unticked comment management in Instagram > Apps and websites"
+    },
+    {
+      "day": 2,
+      "account_id": "IG-002",
+      "set": {
+        "setup_complete": true
+      },
+      "_why": "Spikerz onboarding completed on day 1"
+    },
+    {
+      "day": 2,
+      "account_id": "FB-001",
+      "set": {
+        "stale_token_metadata": true
+      },
+      "_why": "Source still reports connected, but the stored token record has lapsed"
+    },
+    {
+      "day": 3,
+      "account_id": "TT-003",
+      "set": {
+        "connection_status": "connected",
+        "token_expires_in_days": 365,
+        "error": null
+      },
+      "_why": "Reconnected via Spikerz social-connect on day 2"
+    },
+    {
+      "day": 3,
+      "account_id": "LI-003",
+      "remove_assets": [
+        "org:qa-1003"
+      ],
+      "_why": "Member's admin role on the company page was removed"
+    },
+    {
+      "day": 3,
+      "account_id": "FB-001",
+      "set": {
+        "stale_token_metadata": false,
+        "token_expires_in_days": 60
+      },
+      "_why": "Re-authorized on day 2; fresh token record"
+    },
+    {
+      "day": 3,
+      "account_id": "FB-002",
+      "set": {
+        "account_status": "deactivated"
+      },
+      "_why": "Page deactivated (unpublished) by its owner"
+    },
+    {
+      "day": 4,
+      "account_id": "LI-002",
+      "set": {
+        "token_expires_in_days": 60
+      },
+      "_why": "Re-authorized on day 3 after expiry warning"
+    },
+    {
+      "day": 4,
+      "account_id": "IG-003",
+      "add_permissions": [
+        "instagram_business_manage_comments"
+      ],
+      "_why": "Reconnected with full consent on day 3"
+    },
+    {
+      "day": 4,
+      "account_id": "LI-003",
+      "add_assets": [
+        "org:qa-1003"
+      ],
+      "_why": "Admin role restored by page owner"
+    },
+    {
+      "day": 4,
+      "account_id": "XX-003",
+      "set": {
+        "account_status": "locked",
+        "error": "HTTP 403: Your account is temporarily locked."
+      },
+      "_why": "X security lock after login from a new device"
+    },
+    {
+      "day": 4,
+      "account_id": "FB-002",
+      "set": {
+        "account_status": "active"
+      },
+      "_why": "Page republished by owner"
+    },
+    {
+      "day": 5,
+      "account_id": "XX-003",
+      "set": {
+        "account_status": "active",
+        "connection_status": "expired",
+        "error": "HTTP 401: Unauthorized"
+      },
+      "_why": "Unlock invalidated existing OAuth tokens"
+    },
+    {
+      "day": 5,
+      "account_id": "LI-002",
+      "transient_failures": 3,
+      "transient_error": "HTTP 503 Service Unavailable",
+      "_why": "LinkedIn API 503 for the whole retry window"
+    }
+  ],
+  "operator_actions": [
+    {
+      "day": 1,
+      "account_id": "XX-002",
+      "description": "Reviewed 429 retries; no action needed. Spread X checks to reduce shared rate-limit pressure."
+    },
+    {
+      "day": 1,
+      "account_id": "IG-002",
+      "description": "Connected but Spikerz onboarding was skipped: completed setup steps (backup, comment and DM filters) in the Spikerz UI."
+    },
+    {
+      "day": 2,
+      "account_id": "TT-003",
+      "description": "Reconnected TikTok via Spikerz social-connect (owner present); consent granted for user.info.basic, video.list."
+    },
+    {
+      "day": 2,
+      "account_id": "IG-003",
+      "description": "Messaged owner: permission unticked while auditing apps. Reconnect scheduled for day 3."
+    },
+    {
+      "day": 2,
+      "account_id": "FB-001",
+      "description": "Connection flag and token record disagree: re-authorized the Page via the Spikerz UI to force a fresh token."
+    },
+    {
+      "day": 3,
+      "account_id": "IG-003",
+      "description": "Reconnected Instagram via Spikerz social-connect with all permissions ticked."
+    },
+    {
+      "day": 3,
+      "account_id": "LI-002",
+      "description": "Re-authorized LinkedIn ahead of token expiry (warning raised today)."
+    },
+    {
+      "day": 3,
+      "account_id": "LI-003",
+      "description": "Asked company-page owner to restore the member's admin role."
+    },
+    {
+      "day": 3,
+      "account_id": "FB-002",
+      "description": "Page found deactivated: owner confirms it was unpublished by mistake and will republish. No reconnect needed."
+    },
+    {
+      "day": 4,
+      "account_id": "XX-003",
+      "description": "Escalated to owner; no automated login (would deepen lock). Owner to clear X unlock challenge manually."
+    },
+    {
+      "day": 5,
+      "account_id": "XX-003",
+      "description": "Lock cleared but tokens revoked. Reconnect via Spikerz social-connect booked - issue left OPEN."
+    },
+    {
+      "day": 5,
+      "account_id": "LI-002",
+      "description": "LinkedIn API degraded (503 through all retries). Re-run check next day."
+    }
+  ]
+}

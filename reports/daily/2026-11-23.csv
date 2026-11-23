@@ -1,0 +1,16 @@
+run_date,checked_at,account_id,platform,account_status,connection_status,token_valid,token_expires_at,connected_assets,permissions,missing_permissions,severity,attempts,source,findings
+2026-11-23,2026-11-23T06:54:42+00:00,FB-001,facebook,active,connected,True,2027-01-22T00:00:00+00:00,page:qa-2001,pages_manage_engagement|pages_manage_metadata|pages_read_engagement|pages_read_user_content|pages_show_list,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,FB-002,facebook,active,connected,True,2027-01-22T00:00:00+00:00,page:qa-2002,pages_manage_engagement|pages_manage_metadata|pages_read_engagement|pages_read_user_content|pages_show_list,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,FB-003,facebook,active,connected,True,2027-01-22T00:00:00+00:00,page:qa-2003|page:qa-2004,pages_manage_engagement|pages_manage_metadata|pages_read_engagement|pages_read_user_content|pages_show_list,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,IG-001,instagram,active,connected,True,2027-01-22T00:00:00+00:00,ig_account:qa-3001,instagram_business_basic|instagram_business_manage_comments,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,IG-002,instagram,active,connected,True,2027-01-22T00:00:00+00:00,ig_account:qa-3002,instagram_business_basic|instagram_business_manage_comments,,warning,1,mock,[warning] Spikerz onboarding never completed for this account (no setup steps recorded): protection features not configured
+2026-11-23,2026-11-23T06:54:42+00:00,IG-003,instagram,active,connected,True,2027-01-22T00:00:00+00:00,ig_account:qa-3003|page:qa-2002,instagram_business_basic|instagram_business_manage_comments,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,LI-001,linkedin,active,connected,True,2027-01-22T00:00:00+00:00,org:qa-1001,r_organization_social|rw_organization_admin|w_organization_social,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,LI-002,linkedin,active,connected,True,2026-12-02T00:00:00+00:00,org:qa-1002,r_organization_social|rw_organization_admin|w_organization_social,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,LI-003,linkedin,active,connected,True,2027-01-22T00:00:00+00:00,org:qa-1003,r_organization_social|rw_organization_admin|w_organization_social,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,TT-001,tiktok,active,connected,True,2027-11-23T00:00:00+00:00,tiktok_user:qa-4001,user.info.basic|video.list,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,TT-002,tiktok,active,connected,True,2027-11-23T00:00:00+00:00,tiktok_user:qa-4002,user.info.basic|video.list,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,TT-003,tiktok,active,connected,True,2027-11-23T00:00:00+00:00,tiktok_user:qa-4003,user.info.basic|video.list,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,XX-001,x,active,connected,True,2027-05-22T00:00:00+00:00,x_user:qa-5001,offline.access|tweet.moderate.write|tweet.read|users.read,,ok,1,mock,
+2026-11-23,2026-11-23T06:54:42+00:00,XX-002,x,active,connected,True,2027-05-22T00:00:00+00:00,x_user:qa-5002,offline.access|tweet.moderate.write|tweet.read|users.read,,info,3,mock,[info] Recovered after 3 attempts (attempt 2: HTTP 429 Too Many Requests (simulated))
+2026-11-23,2026-11-23T06:54:42+00:00,XX-003,x,active,connected,True,2027-05-22T00:00:00+00:00,x_user:qa-5003,offline.access|tweet.moderate.write|tweet.read|users.read,,ok,1,mock,

@@ -1,0 +1,367 @@
+[
+  {
+    "account_id": "FB-001",
+    "platform": "facebook",
+    "account_type": "page",
+    "environment": "mock",
+    "owner_team": "qa-core",
+    "handle": "Spikerz QA Page One",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "page:qa-2001"
+    ],
+    "permissions": [
+      "pages_show_list",
+      "pages_read_engagement",
+      "pages_read_user_content",
+      "pages_manage_engagement",
+      "pages_manage_metadata"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "Connected via admin profile; page token is non-expiring, user token 60d",
+    "credential_ref": "mock:facebook/FB-001",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "FB-002",
+    "platform": "facebook",
+    "account_type": "page",
+    "environment": "mock",
+    "owner_team": "qa-core",
+    "handle": "Spikerz QA Page Two",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "page:qa-2002"
+    ],
+    "permissions": [
+      "pages_show_list",
+      "pages_read_engagement",
+      "pages_read_user_content",
+      "pages_manage_engagement",
+      "pages_manage_metadata"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "",
+    "credential_ref": "mock:facebook/FB-002",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "FB-003",
+    "platform": "facebook",
+    "account_type": "personal_profile",
+    "environment": "mock",
+    "owner_team": "qa-integrations",
+    "handle": "qa.fb.admin.03",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "page:qa-2003",
+      "page:qa-2004"
+    ],
+    "permissions": [
+      "pages_show_list",
+      "pages_read_engagement",
+      "pages_read_user_content",
+      "pages_manage_engagement",
+      "pages_manage_metadata"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "Admin profile that manages two Pages (multi-asset case)",
+    "credential_ref": "mock:facebook/FB-003",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "IG-001",
+    "platform": "instagram",
+    "account_type": "business",
+    "environment": "mock",
+    "owner_team": "qa-core",
+    "handle": "@spikerz.qa.ig01",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "ig_account:qa-3001"
+    ],
+    "permissions": [
+      "instagram_business_basic",
+      "instagram_business_manage_comments"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "Business account, Instagram Login flow",
+    "credential_ref": "mock:instagram/IG-001",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "IG-002",
+    "platform": "instagram",
+    "account_type": "creator",
+    "environment": "mock",
+    "owner_team": "qa-core",
+    "handle": "@spikerz.qa.ig02",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "ig_account:qa-3002"
+    ],
+    "permissions": [
+      "instagram_business_basic",
+      "instagram_business_manage_comments"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "Creator account - personal IG accounts cannot be connected via API; Spikerz onboarding skipped at connect time",
+    "credential_ref": "mock:instagram/IG-002",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "IG-003",
+    "platform": "instagram",
+    "account_type": "business",
+    "environment": "mock",
+    "owner_team": "qa-integrations",
+    "handle": "@spikerz.qa.ig03",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "ig_account:qa-3003",
+      "page:qa-2002"
+    ],
+    "permissions": [
+      "instagram_business_basic",
+      "instagram_business_manage_comments"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "Linked to FB Page Two (Facebook Login flow)",
+    "credential_ref": "mock:instagram/IG-003",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "LI-001",
+    "platform": "linkedin",
+    "account_type": "organization",
+    "environment": "mock",
+    "owner_team": "qa-core",
+    "handle": "Spikerz QA Org Alpha",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "org:qa-1001"
+    ],
+    "permissions": [
+      "r_organization_social",
+      "w_organization_social",
+      "rw_organization_admin"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "Admin of company page; primary LinkedIn regression account",
+    "credential_ref": "mock:linkedin/LI-001",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "LI-002",
+    "platform": "linkedin",
+    "account_type": "organization",
+    "environment": "mock",
+    "owner_team": "qa-core",
+    "handle": "Spikerz QA Org Beta",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "org:qa-1002"
+    ],
+    "permissions": [
+      "r_organization_social",
+      "w_organization_social",
+      "rw_organization_admin"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "Token issued earlier than others - near expiry at start of window",
+    "credential_ref": "mock:linkedin/LI-002",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "LI-003",
+    "platform": "linkedin",
+    "account_type": "personal_profile",
+    "environment": "mock",
+    "owner_team": "qa-integrations",
+    "handle": "qa.li.member.03",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "org:qa-1003"
+    ],
+    "permissions": [
+      "r_organization_social",
+      "w_organization_social",
+      "rw_organization_admin"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "Member profile that administers one org page",
+    "credential_ref": "mock:linkedin/LI-003",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "TT-001",
+    "platform": "tiktok",
+    "account_type": "business",
+    "environment": "mock",
+    "owner_team": "qa-core",
+    "handle": "@spikerz.qa.tt01",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "tiktok_user:qa-4001"
+    ],
+    "permissions": [
+      "user.info.basic",
+      "video.list"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "",
+    "credential_ref": "mock:tiktok/TT-001",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "TT-002",
+    "platform": "tiktok",
+    "account_type": "creator",
+    "environment": "mock",
+    "owner_team": "qa-core",
+    "handle": "@spikerz.qa.tt02",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "tiktok_user:qa-4002"
+    ],
+    "permissions": [
+      "user.info.basic",
+      "video.list"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "",
+    "credential_ref": "mock:tiktok/TT-002",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "TT-003",
+    "platform": "tiktok",
+    "account_type": "business",
+    "environment": "mock",
+    "owner_team": "qa-integrations",
+    "handle": "@spikerz.qa.tt03",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "tiktok_user:qa-4003"
+    ],
+    "permissions": [
+      "user.info.basic",
+      "video.list"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "First connection attempt failed (consent screen closed); succeeded on retry during setup",
+    "credential_ref": "mock:tiktok/TT-003",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "XX-001",
+    "platform": "x",
+    "account_type": "business",
+    "environment": "mock",
+    "owner_team": "qa-core",
+    "handle": "@spikerz_qa_x01",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "x_user:qa-5001"
+    ],
+    "permissions": [
+      "tweet.read",
+      "users.read",
+      "tweet.moderate.write",
+      "offline.access"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "",
+    "credential_ref": "mock:x/XX-001",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "XX-002",
+    "platform": "x",
+    "account_type": "personal_profile",
+    "environment": "mock",
+    "owner_team": "qa-core",
+    "handle": "@spikerz_qa_x02",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "x_user:qa-5002"
+    ],
+    "permissions": [
+      "tweet.read",
+      "users.read",
+      "tweet.moderate.write",
+      "offline.access"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "Shares API rate-limit bucket with XX-001",
+    "credential_ref": "mock:x/XX-002",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  },
+  {
+    "account_id": "XX-003",
+    "platform": "x",
+    "account_type": "business",
+    "environment": "mock",
+    "owner_team": "qa-integrations",
+    "handle": "@spikerz_qa_x03",
+    "status": "active",
+    "connection_status": "connected",
+    "connected_assets": [
+      "x_user:qa-5003"
+    ],
+    "permissions": [
+      "tweet.read",
+      "users.read",
+      "tweet.moderate.write",
+      "offline.access"
+    ],
+    "last_health_check": "2026-11-23T06:54:42+00:00",
+    "notes": "",
+    "credential_ref": "mock:x/XX-003",
+    "provider": "mock",
+    "created_at": "2026-11-23T06:54:42+00:00",
+    "updated_at": "2026-11-23T06:54:42+00:00"
+  }
+]

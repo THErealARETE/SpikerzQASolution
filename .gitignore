@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+*.egg-info/
+.pytest_cache/
+.DS_Store
+.playwright-mcp/
+# Throwaway databases; the monitoring DB itself is committed so each day builds on the last
+*.db
+!data/spikerz_qa.db
+*.db-journal
+# Evidence may contain real handles/PII; commit only redacted screenshots
+evidence/**/raw/
+# The brief itself is not part of the submission
+Spikerz_QA_Take_Home_Task.docx
+# Private reference material - not part of the submission
+*.pdf

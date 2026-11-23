@@ -1,0 +1,59 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 9 * * *"   # daily health check, 09:00 UTC
+  workflow_dispatch:
+
+jobs:
+  test:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    strategy:
+      matrix:
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests -v
+
+  # Forward-only daily monitoring: runs today's check against the committed
+  # database, then commits the new day back so Day N+1 builds on Day N.
+  daily-health-check:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency: daily-health-check
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Run today's health check
+        env:
+          SPIKERZ_QA_ACTOR: github-actions
+          SPIKERZ_QA_PROVIDER: ${{ vars.SPIKERZ_QA_PROVIDER || 'mock' }}
+          SPIKERZ_QA_ALERT_WEBHOOK: ${{ secrets.SPIKERZ_QA_ALERT_WEBHOOK }}
+          # Live mode only: real tokens come from encrypted secrets, referenced
+          # in the inventory as env:<NAME>, e.g.
+          # SPIKERZ_QA_LI_001_TOKEN: ${{ secrets.SPIKERZ_QA_LI_001_TOKEN }}
+        run: python -m spikerz_qa check
+      - name: Commit today's results
+        run: |
+          git config user.name "spikerz-qa-bot"
+          git config user.email "spikerz-qa-bot@users.noreply.github.com"
+          git add data/spikerz_qa.db reports/
+          git diff --cached --quiet || git commit -m "chore(qa): daily health check $(date -u +%F)"
+          git push
+      - uses: actions/upload-artifact@v5
+        with:
+          name: qa-reports-${{ github.run_id }}
+          path: reports/
