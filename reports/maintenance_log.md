@@ -26,5 +26,10 @@
 | 06:54 | - | `health_check_run` | Daily health check dd821d9003d4: 15 accounts, 0 error/critical, 1 warning | healthcheck-bot |
 | 06:54 | XX-002 | `corrective_action` | Reviewed 429 retries; no action needed. Spread X checks to reduce shared rate-limit pressure. [scripted mock operator] | mock-operator |
 | 06:54 | IG-002 | `corrective_action` | Connected but Spikerz onboarding was skipped: completed setup steps (backup, comment and DM filters) in the Spikerz UI. [scripted mock operator] | mock-operator |
+| 20:49 | IG-002 | `setup_incomplete` | Spikerz onboarding never completed for this account (no setup steps recorded): protection features not configured | healthcheck-bot |
+| 20:49 | XX-002 | `transient_failure` | Recovered after 3 attempts (attempt 2: HTTP 429 Too Many Requests (simulated)) | healthcheck-bot |
+| 20:49 | - | `health_check_run` | Daily health check b32ff28ee6cb: 15 accounts, 0 error/critical, 1 warning | healthcheck-bot |
+| 20:49 | XX-002 | `corrective_action` | Reviewed 429 retries; no action needed. Spread X checks to reduce shared rate-limit pressure. [scripted mock operator] | mock-operator |
+| 20:49 | IG-002 | `corrective_action` | Connected but Spikerz onboarding was skipped: completed setup steps (backup, comment and DM filters) in the Spikerz UI. [scripted mock operator] | mock-operator |
 
 _4 monitoring day(s) still to run; the daily job appends them here._
