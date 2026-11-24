@@ -32,4 +32,18 @@
 | 20:49 | XX-002 | `corrective_action` | Reviewed 429 retries; no action needed. Spread X checks to reduce shared rate-limit pressure. [scripted mock operator] | mock-operator |
 | 20:49 | IG-002 | `corrective_action` | Connected but Spikerz onboarding was skipped: completed setup steps (backup, comment and DM filters) in the Spikerz UI. [scripted mock operator] | mock-operator |
 
-_4 monitoring day(s) still to run; the daily job appends them here._
+## Day 2 - 2026-11-24
+
+| Time (UTC) | Account | Event | Detail | Actor |
+|---|---|---|---|---|
+| 19:54 | FB-001 | `issue_opened` | QA-001 [warning] Reported as connected, but the stored token expired on 2026-10-25: connection state and token metadata disagree | healthcheck-bot |
+| 19:54 | IG-003 | `permission_change` | permissions: removed ['instagram_business_manage_comments']; added - | healthcheck-bot |
+| 19:54 | IG-003 | `issue_opened` | QA-002 [error] Missing required permissions: instagram_business_manage_comments | healthcheck-bot |
+| 19:54 | TT-003 | `connection_change` | connection_status: connected -> expired | healthcheck-bot |
+| 19:54 | TT-003 | `issue_opened` | QA-003 [error] Token/session expired - Spikerz can no longer act on this account | healthcheck-bot |
+| 19:54 | - | `health_check_run` | Daily health check 3ce0d93ee77d: 15 accounts, 2 error/critical, 1 warning | healthcheck-bot |
+| 19:54 | TT-003 | `corrective_action` | Reconnected TikTok via Spikerz social-connect (owner present); consent granted for user.info.basic, video.list. [scripted mock operator] | mock-operator |
+| 19:54 | IG-003 | `corrective_action` | Messaged owner: permission unticked while auditing apps. Reconnect scheduled for day 3. [scripted mock operator] | mock-operator |
+| 19:54 | FB-001 | `corrective_action` | Connection flag and token record disagree: re-authorized the Page via the Spikerz UI to force a fresh token. [scripted mock operator] | mock-operator |
+
+_3 monitoring day(s) still to run; the daily job appends them here._

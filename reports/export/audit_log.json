@@ -468,5 +468,36 @@
       "created_at": "2026-11-23T06:54:42+00:00",
       "updated_at": "2026-11-23T06:54:42+00:00"
     }
+  },
+  {
+    "id": 16,
+    "ts": "2026-11-24T19:54:55+00:00",
+    "actor": "healthcheck-bot",
+    "account_id": "IG-003",
+    "action": "healthcheck_sync",
+    "changes": {
+      "permissions": {
+        "from": [
+          "instagram_business_basic",
+          "instagram_business_manage_comments"
+        ],
+        "to": [
+          "instagram_business_basic"
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "ts": "2026-11-24T19:54:55+00:00",
+    "actor": "healthcheck-bot",
+    "account_id": "TT-003",
+    "action": "healthcheck_sync",
+    "changes": {
+      "connection_status": {
+        "from": "connected",
+        "to": "expired"
+      }
+    }
   }
 ]

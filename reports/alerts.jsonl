@@ -1,2 +1,6 @@
 {"run_date": "2026-11-23", "account_id": "IG-002", "severity": "warning", "message": "Spikerz onboarding never completed for this account (no setup steps recorded): protection features not configured"}
 {"run_date": "2026-11-23", "account_id": "IG-002", "severity": "warning", "message": "Spikerz onboarding never completed for this account (no setup steps recorded): protection features not configured"}
+{"run_date": "2026-11-24", "account_id": "FB-001", "severity": "warning", "message": "QA-001: Reported as connected, but the stored token expired on 2026-10-25: connection state and token metadata disagree"}
+{"run_date": "2026-11-24", "account_id": "IG-003", "severity": "error", "message": "QA-002: Missing required permissions: instagram_business_manage_comments"}
+{"run_date": "2026-11-24", "account_id": "IG-003", "severity": "warning", "message": "Permissions revoked since last check: ['instagram_business_manage_comments']"}
+{"run_date": "2026-11-24", "account_id": "TT-003", "severity": "error", "message": "QA-003: Token/session expired - Spikerz can no longer act on this account"}

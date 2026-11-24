@@ -18,12 +18,12 @@
       "pages_manage_engagement",
       "pages_manage_metadata"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "Connected via admin profile; page token is non-expiring, user token 60d",
     "credential_ref": "mock:facebook/FB-001",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "FB-002",
@@ -44,12 +44,12 @@
       "pages_manage_engagement",
       "pages_manage_metadata"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "",
     "credential_ref": "mock:facebook/FB-002",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "FB-003",
@@ -71,12 +71,12 @@
       "pages_manage_engagement",
       "pages_manage_metadata"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "Admin profile that manages two Pages (multi-asset case)",
     "credential_ref": "mock:facebook/FB-003",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "IG-001",
@@ -94,12 +94,12 @@
       "instagram_business_basic",
       "instagram_business_manage_comments"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "Business account, Instagram Login flow",
     "credential_ref": "mock:instagram/IG-001",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "IG-002",
@@ -117,12 +117,12 @@
       "instagram_business_basic",
       "instagram_business_manage_comments"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "Creator account - personal IG accounts cannot be connected via API; Spikerz onboarding skipped at connect time",
     "credential_ref": "mock:instagram/IG-002",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "IG-003",
@@ -138,15 +138,14 @@
       "page:qa-2002"
     ],
     "permissions": [
-      "instagram_business_basic",
-      "instagram_business_manage_comments"
+      "instagram_business_basic"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "Linked to FB Page Two (Facebook Login flow)",
     "credential_ref": "mock:instagram/IG-003",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "LI-001",
@@ -165,12 +164,12 @@
       "w_organization_social",
       "rw_organization_admin"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "Admin of company page; primary LinkedIn regression account",
     "credential_ref": "mock:linkedin/LI-001",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "LI-002",
@@ -189,12 +188,12 @@
       "w_organization_social",
       "rw_organization_admin"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "Token issued earlier than others - near expiry at start of window",
     "credential_ref": "mock:linkedin/LI-002",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "LI-003",
@@ -213,12 +212,12 @@
       "w_organization_social",
       "rw_organization_admin"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "Member profile that administers one org page",
     "credential_ref": "mock:linkedin/LI-003",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "TT-001",
@@ -236,12 +235,12 @@
       "user.info.basic",
       "video.list"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "",
     "credential_ref": "mock:tiktok/TT-001",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "TT-002",
@@ -259,12 +258,12 @@
       "user.info.basic",
       "video.list"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "",
     "credential_ref": "mock:tiktok/TT-002",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "TT-003",
@@ -274,7 +273,7 @@
     "owner_team": "qa-integrations",
     "handle": "@spikerz.qa.tt03",
     "status": "active",
-    "connection_status": "connected",
+    "connection_status": "expired",
     "connected_assets": [
       "tiktok_user:qa-4003"
     ],
@@ -282,12 +281,12 @@
       "user.info.basic",
       "video.list"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "First connection attempt failed (consent screen closed); succeeded on retry during setup",
     "credential_ref": "mock:tiktok/TT-003",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "XX-001",
@@ -307,12 +306,12 @@
       "tweet.moderate.write",
       "offline.access"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "",
     "credential_ref": "mock:x/XX-001",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "XX-002",
@@ -332,12 +331,12 @@
       "tweet.moderate.write",
       "offline.access"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "Shares API rate-limit bucket with XX-001",
     "credential_ref": "mock:x/XX-002",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   },
   {
     "account_id": "XX-003",
@@ -357,11 +356,11 @@
       "tweet.moderate.write",
       "offline.access"
     ],
-    "last_health_check": "2026-11-23T20:49:56+00:00",
+    "last_health_check": "2026-11-24T19:54:55+00:00",
     "notes": "",
     "credential_ref": "mock:x/XX-003",
     "provider": "mock",
     "created_at": "2026-11-23T06:54:42+00:00",
-    "updated_at": "2026-11-23T20:49:56+00:00"
+    "updated_at": "2026-11-24T19:54:55+00:00"
   }
 ]
