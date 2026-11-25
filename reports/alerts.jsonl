@@ -4,3 +4,8 @@
 {"run_date": "2026-11-24", "account_id": "IG-003", "severity": "error", "message": "QA-002: Missing required permissions: instagram_business_manage_comments"}
 {"run_date": "2026-11-24", "account_id": "IG-003", "severity": "warning", "message": "Permissions revoked since last check: ['instagram_business_manage_comments']"}
 {"run_date": "2026-11-24", "account_id": "TT-003", "severity": "error", "message": "QA-003: Token/session expired - Spikerz can no longer act on this account"}
+{"run_date": "2026-11-25", "account_id": "FB-002", "severity": "error", "message": "QA-004: Account is deactivated on the platform"}
+{"run_date": "2026-11-25", "account_id": "IG-003", "severity": "error", "message": "QA-002: Missing required permissions: instagram_business_manage_comments"}
+{"run_date": "2026-11-25", "account_id": "LI-002", "severity": "warning", "message": "Token expires in 6.2 days (2026-12-02)"}
+{"run_date": "2026-11-25", "account_id": "LI-003", "severity": "warning", "message": "Assets no longer visible: ['org:qa-1003']"}
+{"run_date": "2026-11-25", "account_id": "LI-003", "severity": "warning", "message": "Connected but no assets returned"}

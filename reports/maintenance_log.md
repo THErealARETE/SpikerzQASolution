@@ -46,4 +46,23 @@
 | 19:54 | IG-003 | `corrective_action` | Messaged owner: permission unticked while auditing apps. Reconnect scheduled for day 3. [scripted mock operator] | mock-operator |
 | 19:54 | FB-001 | `corrective_action` | Connection flag and token record disagree: re-authorized the Page via the Spikerz UI to force a fresh token. [scripted mock operator] | mock-operator |
 
-_3 monitoring day(s) still to run; the daily job appends them here._
+## Day 3 - 2026-11-25
+
+| Time (UTC) | Account | Event | Detail | Actor |
+|---|---|---|---|---|
+| 18:57 | FB-001 | `token_refresh` | Token renewed; new expiry 2027-01-24 | healthcheck-bot |
+| 18:57 | FB-001 | `issue_resolved` | QA-001 no longer reproduces - closed | healthcheck-bot |
+| 18:57 | FB-002 | `status_change` | status: active -> deactivated | healthcheck-bot |
+| 18:57 | FB-002 | `issue_opened` | QA-004 [error] Account is deactivated on the platform | healthcheck-bot |
+| 18:57 | LI-002 | `token_expiry_warning` | Token expires in 6.2 days (2026-12-02) | healthcheck-bot |
+| 18:57 | LI-003 | `assets_change` | connected_assets: removed ['org:qa-1003']; added - | healthcheck-bot |
+| 18:57 | TT-003 | `connection_change` | connection_status: expired -> connected | healthcheck-bot |
+| 18:57 | TT-003 | `token_refresh` | Token renewed; new expiry 2027-11-25 | healthcheck-bot |
+| 18:57 | TT-003 | `issue_resolved` | QA-003 no longer reproduces - closed | healthcheck-bot |
+| 18:57 | - | `health_check_run` | Daily health check d34ecc617b64: 15 accounts, 2 error/critical, 2 warning | healthcheck-bot |
+| 18:57 | IG-003 | `corrective_action` | Reconnected Instagram via Spikerz social-connect with all permissions ticked. [scripted mock operator] | mock-operator |
+| 18:57 | LI-002 | `corrective_action` | Re-authorized LinkedIn ahead of token expiry (warning raised today). [scripted mock operator] | mock-operator |
+| 18:57 | LI-003 | `corrective_action` | Asked company-page owner to restore the member's admin role. [scripted mock operator] | mock-operator |
+| 18:57 | FB-002 | `corrective_action` | Page found deactivated: owner confirms it was unpublished by mistake and will republish. No reconnect needed. [scripted mock operator] | mock-operator |
+
+_2 monitoring day(s) still to run; the daily job appends them here._

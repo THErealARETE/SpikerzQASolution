@@ -499,5 +499,46 @@
         "to": "expired"
       }
     }
+  },
+  {
+    "id": 18,
+    "ts": "2026-11-25T18:57:09+00:00",
+    "actor": "healthcheck-bot",
+    "account_id": "FB-002",
+    "action": "healthcheck_sync",
+    "changes": {
+      "status": {
+        "from": "active",
+        "to": "deactivated"
+      }
+    }
+  },
+  {
+    "id": 19,
+    "ts": "2026-11-25T18:57:09+00:00",
+    "actor": "healthcheck-bot",
+    "account_id": "LI-003",
+    "action": "healthcheck_sync",
+    "changes": {
+      "connected_assets": {
+        "from": [
+          "org:qa-1003"
+        ],
+        "to": []
+      }
+    }
+  },
+  {
+    "id": 20,
+    "ts": "2026-11-25T18:57:09+00:00",
+    "actor": "healthcheck-bot",
+    "account_id": "TT-003",
+    "action": "healthcheck_sync",
+    "changes": {
+      "connection_status": {
+        "from": "expired",
+        "to": "connected"
+      }
+    }
   }
 ]
