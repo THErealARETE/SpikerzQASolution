@@ -65,4 +65,19 @@
 | 18:57 | LI-003 | `corrective_action` | Asked company-page owner to restore the member's admin role. [scripted mock operator] | mock-operator |
 | 18:57 | FB-002 | `corrective_action` | Page found deactivated: owner confirms it was unpublished by mistake and will republish. No reconnect needed. [scripted mock operator] | mock-operator |
 
-_2 monitoring day(s) still to run; the daily job appends them here._
+## Day 4 - 2026-11-26
+
+| Time (UTC) | Account | Event | Detail | Actor |
+|---|---|---|---|---|
+| 18:48 | FB-002 | `status_change` | status: deactivated -> active | healthcheck-bot |
+| 18:48 | FB-002 | `issue_resolved` | QA-004 no longer reproduces - closed | healthcheck-bot |
+| 18:48 | IG-003 | `permission_change` | permissions: removed -; added ['instagram_business_manage_comments'] | healthcheck-bot |
+| 18:48 | IG-003 | `issue_resolved` | QA-002 no longer reproduces - closed | healthcheck-bot |
+| 18:48 | LI-002 | `token_refresh` | Token renewed; new expiry 2027-01-25 | healthcheck-bot |
+| 18:48 | LI-003 | `assets_change` | connected_assets: removed -; added ['org:qa-1003'] | healthcheck-bot |
+| 18:48 | XX-003 | `status_change` | status: active -> locked | healthcheck-bot |
+| 18:48 | XX-003 | `issue_opened` | QA-005 [critical] Account is locked on the platform | healthcheck-bot |
+| 18:48 | - | `health_check_run` | Daily health check 13da44b3375f: 15 accounts, 1 error/critical, 0 warning | healthcheck-bot |
+| 18:48 | XX-003 | `corrective_action` | Escalated to owner; no automated login (would deepen lock). Owner to clear X unlock challenge manually. [scripted mock operator] | mock-operator |
+
+_1 monitoring day(s) still to run; the daily job appends them here._

@@ -1,0 +1,418 @@
+{
+  "run_date": "2026-11-26",
+  "monitoring_day": "Day 4",
+  "accounts_checked": 15,
+  "summary": {
+    "ok": 12,
+    "info": 2,
+    "warning": 0,
+    "error": 0,
+    "critical": 1
+  },
+  "mock": true,
+  "results": [
+    {
+      "id": 61,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "FB-001",
+      "platform": "facebook",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-01-24T00:00:00+00:00",
+      "connected_assets": [
+        "page:qa-2001"
+      ],
+      "permissions": [
+        "pages_manage_engagement",
+        "pages_manage_metadata",
+        "pages_read_engagement",
+        "pages_read_user_content",
+        "pages_show_list"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 62,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "FB-002",
+      "platform": "facebook",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-01-22T00:00:00+00:00",
+      "connected_assets": [
+        "page:qa-2002"
+      ],
+      "permissions": [
+        "pages_manage_engagement",
+        "pages_manage_metadata",
+        "pages_read_engagement",
+        "pages_read_user_content",
+        "pages_show_list"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 63,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "FB-003",
+      "platform": "facebook",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-01-22T00:00:00+00:00",
+      "connected_assets": [
+        "page:qa-2003",
+        "page:qa-2004"
+      ],
+      "permissions": [
+        "pages_manage_engagement",
+        "pages_manage_metadata",
+        "pages_read_engagement",
+        "pages_read_user_content",
+        "pages_show_list"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 64,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "IG-001",
+      "platform": "instagram",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-01-22T00:00:00+00:00",
+      "connected_assets": [
+        "ig_account:qa-3001"
+      ],
+      "permissions": [
+        "instagram_business_basic",
+        "instagram_business_manage_comments"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 65,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "IG-002",
+      "platform": "instagram",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-01-22T00:00:00+00:00",
+      "connected_assets": [
+        "ig_account:qa-3002"
+      ],
+      "permissions": [
+        "instagram_business_basic",
+        "instagram_business_manage_comments"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 66,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "IG-003",
+      "platform": "instagram",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-01-22T00:00:00+00:00",
+      "connected_assets": [
+        "ig_account:qa-3003",
+        "page:qa-2002"
+      ],
+      "permissions": [
+        "instagram_business_basic",
+        "instagram_business_manage_comments"
+      ],
+      "missing_permissions": [],
+      "severity": "info",
+      "findings": [
+        {
+          "severity": "info",
+          "category": "permission_change",
+          "message": "Permissions granted since last check: ['instagram_business_manage_comments']"
+        }
+      ],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 67,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "LI-001",
+      "platform": "linkedin",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-01-22T00:00:00+00:00",
+      "connected_assets": [
+        "org:qa-1001"
+      ],
+      "permissions": [
+        "r_organization_social",
+        "rw_organization_admin",
+        "w_organization_social"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 68,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "LI-002",
+      "platform": "linkedin",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-01-25T00:00:00+00:00",
+      "connected_assets": [
+        "org:qa-1002"
+      ],
+      "permissions": [
+        "r_organization_social",
+        "rw_organization_admin",
+        "w_organization_social"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 69,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "LI-003",
+      "platform": "linkedin",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-01-22T00:00:00+00:00",
+      "connected_assets": [
+        "org:qa-1003"
+      ],
+      "permissions": [
+        "r_organization_social",
+        "rw_organization_admin",
+        "w_organization_social"
+      ],
+      "missing_permissions": [],
+      "severity": "info",
+      "findings": [
+        {
+          "severity": "info",
+          "category": "assets",
+          "message": "New assets visible: ['org:qa-1003']"
+        }
+      ],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 70,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "TT-001",
+      "platform": "tiktok",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-11-23T00:00:00+00:00",
+      "connected_assets": [
+        "tiktok_user:qa-4001"
+      ],
+      "permissions": [
+        "user.info.basic",
+        "video.list"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 71,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "TT-002",
+      "platform": "tiktok",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-11-23T00:00:00+00:00",
+      "connected_assets": [
+        "tiktok_user:qa-4002"
+      ],
+      "permissions": [
+        "user.info.basic",
+        "video.list"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 72,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "TT-003",
+      "platform": "tiktok",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-11-25T00:00:00+00:00",
+      "connected_assets": [
+        "tiktok_user:qa-4003"
+      ],
+      "permissions": [
+        "user.info.basic",
+        "video.list"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 73,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "XX-001",
+      "platform": "x",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-05-22T00:00:00+00:00",
+      "connected_assets": [
+        "x_user:qa-5001"
+      ],
+      "permissions": [
+        "offline.access",
+        "tweet.moderate.write",
+        "tweet.read",
+        "users.read"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 74,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "XX-002",
+      "platform": "x",
+      "account_status": "active",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-05-22T00:00:00+00:00",
+      "connected_assets": [
+        "x_user:qa-5002"
+      ],
+      "permissions": [
+        "offline.access",
+        "tweet.moderate.write",
+        "tweet.read",
+        "users.read"
+      ],
+      "missing_permissions": [],
+      "severity": "ok",
+      "findings": [],
+      "attempts": 1,
+      "source": "mock"
+    },
+    {
+      "id": 75,
+      "run_id": "13da44b3375f",
+      "run_date": "2026-11-26",
+      "checked_at": "2026-11-26T18:48:20+00:00",
+      "account_id": "XX-003",
+      "platform": "x",
+      "account_status": "locked",
+      "connection_status": "connected",
+      "token_valid": true,
+      "token_expires_at": "2027-05-22T00:00:00+00:00",
+      "connected_assets": [
+        "x_user:qa-5003"
+      ],
+      "permissions": [
+        "offline.access",
+        "tweet.moderate.write",
+        "tweet.read",
+        "users.read"
+      ],
+      "missing_permissions": [],
+      "severity": "critical",
+      "findings": [
+        {
+          "severity": "critical",
+          "category": "restriction",
+          "message": "Account is locked on the platform"
+        },
+        {
+          "severity": "warning",
+          "category": "platform_error",
+          "message": "HTTP 403: Your account is temporarily locked."
+        }
+      ],
+      "attempts": 1,
+      "source": "mock"
+    }
+  ]
+}

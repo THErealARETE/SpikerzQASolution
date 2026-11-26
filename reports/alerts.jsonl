@@ -9,3 +9,4 @@
 {"run_date": "2026-11-25", "account_id": "LI-002", "severity": "warning", "message": "Token expires in 6.2 days (2026-12-02)"}
 {"run_date": "2026-11-25", "account_id": "LI-003", "severity": "warning", "message": "Assets no longer visible: ['org:qa-1003']"}
 {"run_date": "2026-11-25", "account_id": "LI-003", "severity": "warning", "message": "Connected but no assets returned"}
+{"run_date": "2026-11-26", "account_id": "XX-003", "severity": "critical", "message": "QA-005: Account is locked on the platform"}
