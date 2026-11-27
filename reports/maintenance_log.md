@@ -80,4 +80,15 @@
 | 18:48 | - | `health_check_run` | Daily health check 13da44b3375f: 15 accounts, 1 error/critical, 0 warning | healthcheck-bot |
 | 18:48 | XX-003 | `corrective_action` | Escalated to owner; no automated login (would deepen lock). Owner to clear X unlock challenge manually. [scripted mock operator] | mock-operator |
 
-_1 monitoring day(s) still to run; the daily job appends them here._
+## Day 5 - 2026-11-27
+
+| Time (UTC) | Account | Event | Detail | Actor |
+|---|---|---|---|---|
+| 18:39 | LI-002 | `issue_opened` | QA-006 [warning] Health check could not complete: attempt 1: HTTP 503 Service Unavailable (simulated); attempt 2: HTTP 503 Service Unavailable (simulated); attempt 3: HTTP 503 Service Unavailable (simulated) | healthcheck-bot |
+| 18:39 | XX-003 | `connection_change` | connection_status: connected -> expired | healthcheck-bot |
+| 18:39 | XX-003 | `status_change` | status: locked -> active | healthcheck-bot |
+| 18:39 | XX-003 | `issue_opened` | QA-007 [error] Token/session expired - Spikerz can no longer act on this account | healthcheck-bot |
+| 18:39 | XX-003 | `issue_resolved` | QA-005 no longer reproduces - closed | healthcheck-bot |
+| 18:39 | - | `health_check_run` | Daily health check d56041858edd: 15 accounts, 1 error/critical, 1 warning | healthcheck-bot |
+| 18:39 | XX-003 | `corrective_action` | Lock cleared but tokens revoked. Reconnect via Spikerz social-connect booked - issue left OPEN. [scripted mock operator] | mock-operator |
+| 18:39 | LI-002 | `corrective_action` | LinkedIn API degraded (503 through all retries). Re-run check next day. [scripted mock operator] | mock-operator |

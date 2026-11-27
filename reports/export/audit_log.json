@@ -599,5 +599,22 @@
         "to": "locked"
       }
     }
+  },
+  {
+    "id": 25,
+    "ts": "2026-11-27T18:39:58+00:00",
+    "actor": "healthcheck-bot",
+    "account_id": "XX-003",
+    "action": "healthcheck_sync",
+    "changes": {
+      "status": {
+        "from": "locked",
+        "to": "active"
+      },
+      "connection_status": {
+        "from": "connected",
+        "to": "expired"
+      }
+    }
   }
 ]

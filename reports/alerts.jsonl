@@ -10,3 +10,5 @@
 {"run_date": "2026-11-25", "account_id": "LI-003", "severity": "warning", "message": "Assets no longer visible: ['org:qa-1003']"}
 {"run_date": "2026-11-25", "account_id": "LI-003", "severity": "warning", "message": "Connected but no assets returned"}
 {"run_date": "2026-11-26", "account_id": "XX-003", "severity": "critical", "message": "QA-005: Account is locked on the platform"}
+{"run_date": "2026-11-27", "account_id": "LI-002", "severity": "warning", "message": "QA-006: Health check could not complete: attempt 1: HTTP 503 Service Unavailable (simulated); attempt 2: HTTP 503 Service Unavailable (simulated); attempt 3: HTTP 503 Service Unavailable (simulated)"}
+{"run_date": "2026-11-27", "account_id": "XX-003", "severity": "error", "message": "QA-007: Token/session expired - Spikerz can no longer act on this account"}
